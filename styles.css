@@ -1,0 +1,214 @@
+:root {
+  --green:#b8cfb0;
+  --red:#d7919a;
+  --border:#809d95;
+  --background:#fff9ef;
+  --lightblue:#798cb4;
+  --darkblue:#4d6381;
+	--brown:#916b48;
+	--bouquetBackground: #ffffff;
+}
+html {
+	background: var(--darkblue);
+  font-family: "Lora", serif;
+  font-optical-sizing: auto;
+
+	color: rgb(60, 60, 60);
+}
+body {
+	background: var(--background);
+	width: 800px;
+	border: solid var(--border);
+  border-width: 0 8px ;
+	margin: 0 auto;
+	padding-bottom: 20px;
+	/* height: 100vh; */
+}
+
+p, h3, h4{
+	font-size: 2em;
+	margin: 15px 0;
+}
+h3 {
+	color: whitesmoke;
+}
+header {
+	background:	var(--background);
+	text-align: center;
+	padding: 5px 0;	
+	margin: 0;
+}
+header p {
+	color: var(--darkblue);
+	font-size: 2.6rem;
+}
+#wrapper {
+	margin: 0 10px;
+	width: 740px;
+	padding: 20px;
+	border-radius: 10px;
+	background-color: var(--brown);
+}
+#stickerPage {	
+	display: flex;
+}
+#menu {
+	flex-wrap: nowrap;
+	width: 30%;
+	height: 520px;
+	display: inline-block;
+	margin-bottom: 20px;
+	background-color: rgb(255, 240, 222);
+	border-radius: 10px;
+	padding: 0 10px;
+}
+#flowerChoices {
+	background-color: white;
+	height: 230px;
+	/* overflow-y:scroll; */
+	margin: 10px;
+	margin-top: 20px;
+	padding: 10px;
+	border: solid var(--border);
+  border-width: 2px ;
+	border-radius: 10px;
+  box-shadow: 0 0 4px var(--lightblue)
+	/* scrollbar-color: var(--border); */
+
+}
+#flowerChoices img {
+	margin: 0 auto;
+	height: 40px;
+}
+#highlightedFlower {
+	display: block;	
+	margin:  0 10px;
+	margin-top: 20px;
+	border: thin solid #809d95;
+	border-radius: 8px;	
+	height: 200px;
+	background-color: var(--bouquetBackground);
+  box-shadow: 0 0 4px var(--lightblue)
+}
+#highlightedFlower img {
+	display: block;
+	margin: 0 auto;
+	max-width: 140px;
+	max-height: 170px;
+}
+#flowerBouquet {		
+	flex-wrap: nowrap;
+	width: 30%;
+	position: relative;
+	display: inline-block;
+	min-width: 500px;
+	border: thin solid black;
+	height: 520px;	
+	border-radius: 10px;
+	margin-left: 20px;
+	background-color: var(--bouquetBackground);
+	overflow: hidden;
+	z-index: 0;
+}
+#flowerBouquet img {
+	max-width: 140px;
+	max-height: 190px;
+	align-items: center;
+	z-index: 100;
+	}
+#adjustments {
+	display: flex;
+	flex-wrap: nowrap;
+	align-items: center;
+	width: calc(740-40)px;
+	background-color: bisque;
+	padding: 0 20px;
+	border-radius: 20px;
+}
+#adjustments input {
+	margin: 15px 8px;
+	width: 190px;
+}
+#adjustments p {
+	margin: 8px 4px;
+}
+
+
+button {
+	cursor: pointer;
+	font-size: 1.2em;
+	color: whitesmoke;
+	background: rgb(42, 148, 174);
+	border: 3px solid rgb(191, 233, 244);
+	padding: 5px 10px;
+	border-radius: 5px;
+	box-shadow: 3px 6px 6px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+button#delete, button#flip {
+	cursor: pointer;
+	font-size: .8em;
+	width: 60px;
+	height: 20px;
+	color: whitesmoke;
+	background: var(--border);
+	border:none;
+	padding: 2px 4px;
+	margin: 0px 5px;
+	border-radius: 3px;
+	box-shadow: none;
+	vertical-align: center;
+}
+
+footer {
+  text-align: center;
+	margin-top: 50px;
+}
+
+/* STYLE CLASSES */
+.flipped {	
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+.rotated {
+transform: rotate(0);
+}
+
+/* .drop {
+	border: 2px solid rgb(183, 156, 237);
+	background: none;
+} 
+
+.flowerChoices {
+  width: 92%;
+  min-height: 180px;	
+	padding: 10px;
+}
+.flowerBouquet {
+  width: 92%;
+  height: 300px;
+  position: relative;	
+	padding: 10px;
+}
+
+.flowerChoices > div {
+	cursor: pointer;
+	border: none;
+}
+
+.flowerChoices {
+	margin-bottom: 20px;
+}
+
+
+
+
+
+
+
+
+*/
+
+.droppable {
+  position: absolute;
+  display: inline-block;
+}

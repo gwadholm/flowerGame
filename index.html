@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flower Game</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css" />
+
+    <script src="script.js" defer></script>
+    
+  </head>
+  <body>
+    <header>
+      <p>Make your own flower garden</p>
+    </header>
+
+    <main id="wrapper">
+      <div id="stickerPage">
+        <div id="menu">
+          <div id="flowerChoices">          
+            <img src="img/yellowFlower1.png" draggable="true"/>
+            <img src="img/clover1.svg" draggable="true"/>
+            <img src="img/clover2.svg" draggable="true"/>
+            <img src="img/chicory1.png" draggable="true"/>
+            <img src="img/chicory2.png" draggable="true"/>
+            <img src="img/comfrey2.png" draggable="true"/>
+            <img src="img/lilac1.png" draggable="true"/>
+            <img src="img/coneflower1.png" draggable="true"/>
+            <img src="img/coneflower2.png" draggable="true"/>
+            <img src="img/coneflower3.png" draggable="true"/>
+            <img src="img/coneflower4.png" draggable="true"/>
+            <img src="img/paintbrush1.png" draggable="true"/>
+            <img src="img/paintbrush2.png" draggable="true"/>
+            <img src="img/vetch1.png" draggable="true"/>
+            <img src="img/aster1.png" draggable="true"/>
+            <img src="img/wreath1.png" draggable="true"/>
+          </div>
+          
+          <section  id="highlightedFlower" >         
+          </section>
+
+
+
+        </div>
+
+        <div id="flowerBouquet">
+          
+        </div>
+      </div>
+
+      <section id="adjustments">
+        <label for="scale">Scale</label>        
+        <input type="range" value="0" id="scale" class="range" min="-50" max="250"/>
+        
+        <label for="rotation">Rotation</label>        
+        <input type="range" value="0" id="rotation" class="range"  min="-100" max="100" />
+
+        <button id="flip">Flip</button>
+        <button id="delete">Delete</button>
+        <p id="up">&#8679;</p>
+        <p id="down">&#8681;</p>
+  
+      </section>
+
+    </main>
+
+<!--   
+    <footer>
+      <button>Finish Planting</button>
+    </footer> -->
+  </body>
+</html>
+
